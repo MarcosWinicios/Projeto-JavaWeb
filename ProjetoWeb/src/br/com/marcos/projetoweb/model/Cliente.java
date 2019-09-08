@@ -7,7 +7,7 @@ public abstract class Cliente {
 	private String nome;
 	private String endereco;
 	private String telefone;
-	private String cpf;
+
 	private List<Produto> produtos;
 
 	Cliente(String nome, String endereco, String telefone) {
@@ -61,12 +61,5 @@ public abstract class Cliente {
 	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
 	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
 }
+	
