@@ -6,6 +6,11 @@ public abstract class Conta implements Produto {
 	private double saldo;
 	private boolean situacao;
 
+
+	public Conta() {
+		super();
+	}
+
 	Conta(int numero) {
 		this.numero = numero;
 		this.saldo = 0;
@@ -36,10 +41,6 @@ public abstract class Conta implements Produto {
 
 	public void ativar() {
 		this.situacao = true;
-	}
-
-	public boolean estaAtivada() {
-		return this.situacao;
 	}
 
 	public double getSaldo() {
