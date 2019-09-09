@@ -1,6 +1,7 @@
 package br.com.marcos.projetoweb.model;
 
 public abstract class Conta implements Produto {
+	private int id;
 	private int numero;
 	private double saldo;
 	private boolean situacao;
@@ -44,4 +45,33 @@ public abstract class Conta implements Produto {
 	public double getSaldo() {
 		return saldo;
 	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public boolean getSituacao() {
+		return situacao;
+	}
+
+	public void setSituacao(boolean situacao) {
+		this.situacao = situacao;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
 }
