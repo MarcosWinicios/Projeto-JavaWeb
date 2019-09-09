@@ -6,6 +6,16 @@ public class Seguro implements Produto {
 	private double valor;
 	private boolean situacao;
 	
+	
+	
+	public Seguro(int id, int numero, double valor, boolean situacao) {
+		super();
+		this.id = id;
+		this.numero = numero;
+		this.valor = valor;
+		this.situacao = situacao;
+	}
+
 	Seguro(int id, int numero, double valor){
 		this.id = id;
 		this.numero = numero;
@@ -18,7 +28,7 @@ public class Seguro implements Produto {
 		this.valor = valor;
 		this.situacao = true;
 	}
-	Seguro(){
+	public Seguro(){
 		this.situacao = true;
 	}
 
