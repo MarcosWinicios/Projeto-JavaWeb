@@ -1,0 +1,11 @@
+127.0.0.1 - - [12/Sep/2019:16:10:00 -0300] "GET / HTTP/1.1" 200 11369
+127.0.0.1 - - [12/Sep/2019:16:10:58 -0300] "GET / HTTP/1.1" 200 11369
+127.0.0.1 - - [12/Sep/2019:16:27:55 -0300] "GET / HTTP/1.1" 200 11369
+127.0.0.1 - - [12/Sep/2019:16:27:55 -0300] "GET /ProjetoWeb/formCFisico.jsp HTTP/1.1" 200 661
+127.0.0.1 - - [12/Sep/2019:16:29:20 -0300] "GET /ProjetoWeb/formCJuridico.jsp HTTP/1.1" 200 610
+127.0.0.1 - - [12/Sep/2019:16:30:12 -0300] "GET /ProjetoWeb/index.jsp HTTP/1.1" 200 308
+127.0.0.1 - - [12/Sep/2019:16:30:13 -0300] "GET /ProjetoWeb/formCJuridico.jsp HTTP/1.1" 200 610
+127.0.0.1 - - [12/Sep/2019:16:30:16 -0300] "GET /ProjetoWeb/formCFisico.jsp HTTP/1.1" 200 661
+127.0.0.1 - - [12/Sep/2019:16:30:18 -0300] "POST /ProjetoWeb/sistema?logica=CadastrarFisico HTTP/1.1" 500 2191
+127.0.0.1 - - [12/Sep/2019:16:30:22 -0300] "GET /ProjetoWeb/formCJuridico.jsp HTTP/1.1" 200 610
+127.0.0.1 - - [12/Sep/2019:16:30:24 -0300] "GET /ProjetoWeb/formCFisico.jsp HTTP/1.1" 200 661
