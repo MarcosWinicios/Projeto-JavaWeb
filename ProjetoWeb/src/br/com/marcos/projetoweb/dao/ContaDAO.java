@@ -20,6 +20,7 @@ public class ContaDAO {
 	
 	public boolean cadastrar(Conta c, int idCliente) {
 		String sql = null;
+		
 		if(c.getTipo() == "pupanca") {
 			sql = "INSERT INTO conta (numero, saldo,idCliente,idTipo) values(?,?,?" + 1 + ")";
 		}else {
