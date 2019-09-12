@@ -2,6 +2,7 @@ package br.com.marcos.projetoweb.dao;
  import java.sql.Connection;
  import java.sql.PreparedStatement;
  import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import br.com.marcos.projetoweb.conexao.Conexao;
 import br.com.marcos.projetoweb.model.Cliente;
@@ -65,4 +66,46 @@ public class ContaDAO {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public boolean sacar_depositar(int numeroConta, double valor) {
+		String sql ="UPDATE conta SET saldo = ? WHERE numero = ?";
+		
+		try {
+			stmt = this.conexao.prepareStatement(sql);
+			stmt.setDouble(1, valor);
+			stmt.setInt(2, numeroConta);
+			stmt.execute();
+			stmt.close();
+			return true;
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public boolean desativar(int numero) {
+		String sql ="UPDATE conta SET situacao = FALSE WHERE numero = ?";
+		
+		try {
+			stmt = this.conexao.prepareStatement(sql);
+			stmt.setInt(1, numero);
+			stmt.execute();
+			stmt.close();
+			return true;
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public boolean ativar(int numero) {
+		String sql ="UPDATE conta SET situacao = TRUE WHERE numero = ?";
+				try {
+					stmt = this.conexao.prepareStatement(sql);
+					stmt.setInt(1, numero);
+					stmt.execute();
+					stmt.close();
+					return true;
+				} catch (Exception e) {
+					throw new RuntimeException(e);
+				}
+		}
 }
